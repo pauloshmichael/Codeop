@@ -1,6 +1,3 @@
-# day09/practice.py
-# Trees, Graphs, and Priority Queues - Simple Version
-
 import heapq
 from collections import deque
 
