@@ -1,6 +1,3 @@
-# day08/practice.py
-# Recursion, Searching, and Sorting - Simple Version
-
 import random
 
 # ============================================
