@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 13 </title>
+  <link rel="stylesheet" href="day13_style.css"> 
+</head>
+<body>
+
+<h1>Day 13 · CSS exercises</h1>
+<p>Property of IBT College Canada &bull; CodeOps · Full Stack Software Development</p>
+<section class="exercise-box">
+  <h2>1. Custom properties &amp; styled button</h2>
+  <p><code>:root</code> defines two colors, one spacing, one font stack.</p>
+  <button class="btn-ex1">🍛 Book a table</button>
+  <p class="note" style="margin-top:0.75rem;">Button uses <code>var(--primary-color)</code>, <code>var(--accent-color)</code>, <code>var(--button-spacing)</code>, <code>var(--brand-font-stack)</code>.</p>
+</section>
+<section class="exercise-box">
+  <h2>2. Box-sizing: content-box vs border-box</h2>
+  <div class="card-demo">
+    <div>
+      <div class="card card-content-box">
+        <strong>content-box</strong><br />
+        width: 300px + 24px padding + 2px border = <strong>352px</strong> rendered.
+      </div>
+      <div class="card-label">← 352px wide (300+24+24+2+2)</div>
+    </div>
+    <div>
+      <div class="card card-border-box">
+        <strong>border-box</strong><br />
+        width: 300px (padding &amp; border included) = <strong>300px</strong> exactly.
+      </div>
+      <div class="card-label">← 300px wide (padding+border inside)</div>
+    </div>
+  </div>
+</section>
+<section class="exercise-box">
+  <h2>3. Specificity showdown</h2>
+  <div class="spec-demo">
+    <p id="spec-id" class="spec-class spec-paragraph" style="font-size:1.1rem; font-weight:500;">
+      This paragraph has an element selector (p), a class (.spec-class), and an ID (#spec-id).
+    </p>
+    <p><strong>Winner: ID selector</strong> — specificity (1,0,0) beats class (0,1,0) and element (0,0,1).</p>
+    <ul style="margin-top:0.5rem; background:#fcf8f2; padding:0.8rem 1.2rem; border-radius:8px; list-style:square;">
+      <li><code>#spec-id</code> → specificity: <strong>1,0,0</strong> (wins)</li>
+      <li><code>.spec-class</code> → specificity: 0,1,0</li>
+      <li><code>p</code> (element) → specificity: 0,0,1</li>
+    </ul>
+    <p class="spec-note">🔍 The ID rule sets color to <code>#2c5282</code> (blue), which overrides the class (red) and element (green).</p>
+  </div>
+</section>
+<section class="exercise-box">
+  <h2>4. Ethiopian Airlines · zebra table</h2>
+  <div class="table-wrap">
+    <table class="flight-table">
+      <caption>Ethiopian Airlines · departures 31 July 2026</caption>
+      <thead>
+        <tr>
+          <th scope="col">Flight</th>
+          <th scope="col">From</th>
+          <th scope="col">To</th>
+          <th scope="col">Departs</th>
+          <th scope="col">Price ETB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>ET 701</td><td>Addis Ababa</td><td>Nairobi</td><td>08:30</td><td>14,200</td></tr>
+        <tr><td>ET 502</td><td>Addis Ababa</td><td>Dubai</td><td>10:15</td><td>21,500</td></tr>
+        <tr><td>ET 814</td><td>Addis Ababa</td><td>London</td><td>12:45</td><td>38,700</td></tr>
+        <tr><td>ET 633</td><td>Addis Ababa</td><td>Cairo</td><td>15:20</td><td>17,300</td></tr>
+        <tr><td>ET 409</td><td>Addis Ababa</td><td>Johannesburg</td><td>18:10</td><td>26,900</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note">Zebra rows via <code>tr:nth-child(even)</code> · header with dark background · comfortable <code>padding: 0.8rem 1rem</code>.</p>
+</section>
+<section class="exercise-box">
+  <h2>5. Color conversion: hex → rgb &amp; hsl + lighter hover</h2>
+  <p>Three hex colours converted to <code>rgb()</code> and <code>hsl()</code>. Hover each swatch to see a lighter shade (lightness +15%).</p>
+  <div class="color-palette">
+    <div class="color-card color-1">
+      <div class="color-swatch" style="background:#5a2d2d;"></div>
+      <code>HEX: #5a2d2d</code>
+      <code>RGB: rgb(90, 45, 45)</code>
+      <code>HSL: hsl(0, 33%, 26%)</code>
+      <div class="hover-demo">hover me (lighter)</div>
+    </div>
+    <div class="color-card color-2">
+      <div class="color-swatch" style="background:#2d5a3d;"></div>
+      <code>HEX: #2d5a3d</code>
+      <code>RGB: rgb(45, 90, 61)</code>
+      <code>HSL: hsl(141, 33%, 26%)</code>
+      <div class="hover-demo">hover me (lighter)</div>
+    </div>
+    <div class="color-card color-3">
+      <div class="color-swatch" style="background:#2d3d5a;"></div>
+      <code>HEX: #2d3d5a</code>
+      <code>RGB: rgb(45, 61, 90)</code>
+      <code>HSL: hsl(221, 33%, 26%)</code>
+      <div class="hover-demo">hover me (lighter)</div>
+    </div>
+  </div>
+  <p style="font-size:0.9rem; margin-top:0.5rem;">
+    <strong>Lighter hover:</strong> each <code>.hover-demo</code> uses <code>--hover-color</code> (lightness increased by ~15%). 
+    For example: hsl(0, 33%, 26%) → hsl(0, 33%, 41%) on hover.
+  </p>
+</section>
+
+<hr />
+
+<footer>
+  <p>IBT College Canada · CodeOps · Full Stack Software Development</p>
+  <p style="font-size:0.8rem;">Day 13 exercises: custom properties, box-sizing, specificity, zebra table, color conversion.</p>
+</footer>
+
+</body>
+</html>

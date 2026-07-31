@@ -1,0 +1,216 @@
+:root {
+      --primary-color: #7f4f24;
+      --accent-color: #d4a373;
+      --button-spacing: 1.2rem 2.4rem;
+      --brand-font-stack: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif;
+    }
+
+    .btn-ex1 {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: var(--button-spacing);
+      font-family: var(--brand-font-stack);
+      font-size: 1.1rem;
+      font-weight: 600;
+      border: 2px solid var(--accent-color);
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .btn-ex1:hover {
+      background-color: var(--accent-color);
+      color: #1e1e1e;
+      border-color: var(--primary-color);
+    }
+    .card-demo {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 1.5rem 0;
+    }
+    .card {
+      width: 300px;
+      padding: 24px;
+      border: 2px solid #7f4f24;
+      background: #fcf8f2;
+      border-radius: 8px;
+      font-family: system-ui, sans-serif;
+    }
+    .card-content-box {
+      box-sizing: content-box;
+    }
+    .card-border-box {
+      box-sizing: border-box;
+    }
+    .card-label {
+      font-weight: 600;
+      margin-top: 0.25rem;
+      font-size: 0.9rem;
+      color: #4a2c1b;
+    }
+    .spec-demo {
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #f5ede3;
+      border-radius: 8px;
+    }
+    p.spec-paragraph {
+      color: #1e6f5c; 
+    }
+    .spec-class {
+      color: #b34a4a;
+    }
+    #spec-id {
+      color: #2c5282;
+    }
+    .spec-note {
+      background: #e8d5b5;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 500;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0;
+    }
+    .flight-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: system-ui, sans-serif;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+    }
+    .flight-table caption {
+      caption-side: bottom;
+      margin-top: 0.6rem;
+      font-weight: 500;
+      color: #4a2c1b;
+    }
+    .flight-table thead tr {
+      background: #7f4f24;
+      color: white;
+    }
+    .flight-table th {
+      padding: 0.9rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+    .flight-table td {
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #eee;
+    }
+    .flight-table tbody tr:nth-child(even) {
+      background-color: #f8f0e6;
+    }
+    .flight-table tbody tr:hover {
+      background-color: #e8d5b5;
+      transition: background 0.15s;
+    }
+    .color-palette {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 1.5rem 0;
+      padding: 1rem;
+      background: #fcf8f2;
+      border-radius: 12px;
+    }
+    .color-card {
+      flex: 1 1 180px;
+      background: white;
+      padding: 0.8rem 1.2rem 1.2rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      border: 1px solid #eee;
+    }
+    .color-swatch {
+      height: 60px;
+      border-radius: 8px;
+      margin-bottom: 0.5rem;
+      border: 1px solid #ddd;
+    }
+    .color-card code {
+      display: block;
+      font-size: 0.8rem;
+      background: #f5ede3;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      word-break: break-word;
+    }
+    .color-card .hover-demo {
+      display: inline-block;
+      padding: 0.2rem 0.8rem;
+      border-radius: 40px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: white;
+      margin-top: 0.3rem;
+      transition: background 0.2s;
+      background: var(--base-color, #7f4f24);
+    }
+    .color-card .hover-demo:hover {
+      background: var(--hover-color, #a06b3a);
+    }
+    .color-1 { --base-color: #5a2d2d; --hover-color: #7a3d3d; }
+    .color-2 { --base-color: #2d5a3d; --hover-color: #3d7a52; }
+    .color-3 { --base-color: #2d3d5a; --hover-color: #3d527a; }
+    body {
+      background: #faf6f0;
+      color: #1e1e1e;
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      line-height: 1.5;
+    }
+    h1, h2 {
+      color: #4a2c1b;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    h1 {
+      font-size: 2rem;
+      border-bottom: 2px solid #d4a373;
+      padding-bottom: 0.3rem;
+    }
+    h2 {
+      font-size: 1.4rem;
+      border-left: 5px solid #d4a373;
+      padding-left: 0.75rem;
+    }
+    .exercise-box {
+      background: white;
+      padding: 1.2rem 1.8rem 1.8rem;
+      border-radius: 14px;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.03);
+      border: 1px solid #f0e3d4;
+    }
+    .exercise-box p {
+      margin: 0.5rem 0;
+    }
+    .note {
+      background: #f5ede3;
+      padding: 0.4rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      display: inline-block;
+    }
+    hr {
+      margin: 2rem 0;
+      border: 0;
+      border-top: 1px dashed #d4a373;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #d4a373;
+      text-align: center;
+      color: #4a3a2a;
+      font-size: 0.9rem;
+    }
