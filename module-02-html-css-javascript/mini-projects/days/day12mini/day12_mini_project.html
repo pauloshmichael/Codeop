@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habesha Eatery · Home</title>
+  <meta name="description" content="Habesha Eatery – authentic Ethiopian cuisine in Addis Ababa. Menu, contact, and reservation." />
+ 
+</head>
+<body>
+
+
+<header>
+  <div class="logo">🍛 Habesha Eatery</div>
+  <nav>
+    <a href="#" aria-current="page">Home</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Welcome to Habesha Eatery</h1>
+      <p>Authentic Ethiopian flavours in the heart of Addis Ababa. Enjoy traditional dishes made with love and berbere.</p>
+      <p ><span class="badge">Open daily 11:00 – 22:00</span></p>
+    </div>
+    <div class="hero-img">
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='150' viewBox='0 0 200 150'%3E%3Crect width='200' height='150' fill='%23d4a373'/%3E%3Ctext x='20' y='85' font-family='sans-serif' font-size='18' fill='%23332'%3EInjera &amp; wot%3C/text%3E%3C/svg%3E"
+           alt="Platter of injera with various wot (stews) – traditional Ethiopian cuisine"
+           width="200" height="150" loading="lazy" />
+    </div>
+  </section>
+
+  <h2>🇪🇹 Today's menu</h2>
+  <div class="menu-grid">
+    <div class="menu-item">
+      <h3>Doro Wat</h3>
+      <div class="desc">Spicy chicken stew with boiled egg</div>
+      <span class="price">320 ETB</span>
+    </div>
+    <div class="menu-item">
+      <h3>Kitfo</h3>
+      <div class="desc">Minced raw beef with mitmita &amp; clarified butter</div>
+      <span class="price">450 ETB</span>
+    </div>
+    <div class="menu-item">
+      <h3>Shiro Wat</h3>
+      <div class="desc">Ground chickpea stew, mild &amp; aromatic</div>
+      <span class="price">240 ETB</span>
+    </div>
+    <div class="menu-item">
+      <h3>Tibs</h3>
+      <div class="desc">Sautéed beef with onions, peppers &amp; rosemary</div>
+      <span class="price">380 ETB</span>
+    </div>
+    <div class="menu-item">
+      <h3>Firfir</h3>
+      <div class="desc">Shredded injera with spicy tomato sauce</div>
+      <span class="price">180 ETB</span>
+    </div>
+    <div class="menu-item">
+      <h3>Ayib Be Gomen</h3>
+      <div class="desc">Collard greens with cottage cheese</div>
+      <span class="price">210 ETB</span>
+    </div>
+  </div>
+
+  <section id="contact" style="scroll-margin-top: 2rem;">
+    <h2>📞 Contact &amp; reservation</h2>
+    <div class="two-col">
+      <div>
+        <div class="contact-info">
+          <p><strong>📍 Location</strong><br />Bole Road, Addis Ababa<br />(near Ethiopian Airlines HQ)</p>
+          <p><strong>📱 Phone</strong><br />+251 911 234 567</p>
+          <p><strong>✉️ Email</strong><br />hello@habeshaeatery.et</p>
+        </div>
+     
+        <figure style="margin: 1rem 0;">
+          <iframe
+            title="Map showing Habesha Eatery location on Bole Road, Addis Ababa"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=38.73%2C9.0%2C38.78%2C9.05&layer=mapnik&marker=9.03%2C38.75"
+            width="100%" height="180" style="border:1px solid #d4a373; border-radius:12px;"
+            allowfullscreen="" loading="lazy"
+          ></iframe>
+          <figcaption >📍 Bole Road, Addis Ababa</figcaption>
+        </figure>
+      </div>
+
+      <div class="contact-form">
+        <h3 >Book a table</h3>
+        <form action="#" method="post">
+          <label for="cname">Full name</label>
+          <input type="text" id="cname" name="cname" required />
+
+          <label for="cemail">Email</label>
+          <input type="email" id="cemail" name="cemail" required />
+
+          <label for="cphone">Phone</label>
+          <input type="tel" id="cphone" name="cphone" placeholder="+251 9XX XXX XXX" />
+
+          <label for="cguests">Guests</label>
+          <select id="cguests" name="cguests">
+            <option value="1">1 person</option>
+            <option value="2" selected>2 people</option>
+            <option value="3">3 people</option>
+            <option value="4">4 people</option>
+            <option value="5+">5+</option>
+          </select>
+
+          <label for="cdate">Date</label>
+          <input type="date" id="cdate" name="cdate" />
+
+          <label for="cnote">Special requests</label>
+          <textarea id="cnote" name="cnote" rows="2"></textarea>
+
+          <button type="submit">Send reservation</button>
+        </form>
+ 
+      </div>
+    </div>
+  </section>
+
+  <section >
+    <h2>✈️ Ethiopian Airlines · departures</h2>
+    <table border="3">
+      <caption>Sample flights from Addis Ababa – 31 July 2026</caption>
+      <thead>
+        <tr>
+          <th scope="col">Flight</th>
+          <th scope="col">From</th>
+          <th scope="col">To</th>
+          <th scope="col">Departs</th>
+          <th scope="col">Price ETB</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>ET 701</td><td>Addis Ababa</td><td>Nairobi</td><td>08:30</td><td>14,200</td></tr>
+        <tr><td>ET 502</td><td>Addis Ababa</td><td>Dubai</td><td>10:15</td><td>21,500</td></tr>
+        <tr><td>ET 814</td><td>Addis Ababa</td><td>London</td><td>12:45</td><td>38,700</td></tr>
+        <tr><td>ET 633</td><td>Addis Ababa</td><td>Cairo</td><td>15:20</td><td>17,300</td></tr>
+        <tr><td>ET 409</td><td>Addis Ababa</td><td>Johannesburg</td><td>18:10</td><td>26,900</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <section >
+    <h2>♿ Accessibility fixes (exercise 4)</h2>
+
+    <div >
+      <button type="button" >Click me</button>
+      <label for="a11y-name">Your name</label>
+      <input type="text" id="a11y-name" placeholder="e.g. Selam" />
+      <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='22' fill='%23d4a373'/%3E%3Ctext x='8' y='32' font-size='22' fill='%23332'%3E☕%3C/text%3E%3C/svg%3E"
+           alt="Cup of Ethiopian coffee – traditional beverage" />
+      <span ><strong>Fixes:</strong> button → keyboard/role; label → screen reader announcement; alt → description for image.</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Habesha Eatery · Addis Ababa · © 2026 · Authentic Ethiopian cuisine</p>
+  <p >All exercises complete: form, table, media, accessibility, valid head.</p>
+</footer>
+</body>
+</html>
