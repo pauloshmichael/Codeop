@@ -1,0 +1,260 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: #9ab7d4;
+      padding: 2rem 1.5rem;
+      color: #0b1a2b;
+    }
+
+    .exercise {
+      background: white;
+      border-radius: 2rem;
+      padding: 2rem 1.8rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 8px 20px rgb(217, 177, 177);
+      border: 1px solid #e9edf2;
+    }
+
+    .exercise h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      color: #1e3a5f;
+      margin-bottom: 1.5rem;
+      border-bottom: 2px solid #eef2f6;
+      padding-bottom: 0.65rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .exercise h2 small {
+      font-weight: 400;
+      font-size: 0.8rem;
+      background: #eef2f6;
+      padding: 0.1rem 0.7rem;
+      border-radius: 40px;
+      color: #2c4a6e;
+      margin-left: 0.3rem;
+    }
+
+    /* ---------- 1. FLEX NAVBAR ---------- */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      padding: 0.8rem 1.8rem;
+      border-radius: 60px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+      border: 1px solid #e2e8f0;
+    }
+
+    .logo {
+      font-weight: 600;
+      font-size: 1.8rem;
+      letter-spacing: -0.02em;
+      color: #0f2b45;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #1e3a5f;
+      font-weight: 450;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      color: #0775f3;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 1.5px solid #1e3a5f;
+      padding: 0.4rem 1.2rem;
+      border-radius: 40px;
+      font-weight: 500;
+      color: #1e3a5f;
+      cursor: default;
+      transition: 0.15s;
+    }
+
+    .btn-outline:hover {
+      background: #1e3a5f;
+      color: white;
+    }
+    .card-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+    }
+
+    .card-row .card {
+      flex: 1;               
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 1.2rem;
+      padding: 1.6rem 1rem;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+      min-width: 10px;      
+    }
+
+    .card-row .card:nth-child(1) { background: #f2f7fd; }
+    .card-row .card:nth-child(2) { background: #f2faf5; }
+    .card-row .card:nth-child(3) { background: #fdf6f0; }
+    .card-row .card:nth-child(4) { background: #f5f3ff; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery-item {
+      background: #d9e2ed;
+      border-radius: 1.2rem;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 400;
+      color: #1e3a5f;
+      background: #e6edf6;
+      border: 1px solid #d0dceb;
+      transition: 0.1s;
+      font-size: 0.95rem;
+    }
+
+    .gallery-item:nth-child(2) { background: #d6e4f0; }
+    .gallery-item:nth-child(3) { background: #cbdcec; }
+    .gallery-item:nth-child(4) { background: #c0d4e8; }
+    .gallery-item:nth-child(5) { background: #b5cce4; }
+    .gallery-item:nth-child(6) { background: #aac4e0; }
+
+    /* ---------- 4. FULL PAGE GRID (header/sidebar/main/footer) ---------- */
+    .page-grid {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+      grid-template-columns: 1fr 2.5fr;
+      gap: 1rem;
+      background: #f1f5f9;
+      border-radius: 1.5rem;
+      padding: 1rem;
+      border: 1px solid #dce3ec;
+    }
+
+    .page-grid > * {
+      background: white;
+      border-radius: 1.2rem;
+      padding: 1.5rem 1rem;
+      border: 1px solid #e2e8f0;
+      text-align: center;
+      font-weight: 450;
+      color: #1e3a5f;
+    }
+
+    .header { grid-area: header; background: #eaf0f8; }
+    .sidebar { grid-area: sidebar; background: #f0f4fa; }
+    .main { grid-area: main; background: #f5f8fc; }
+    .footer { grid-area: footer; background: #eaf0f8; }
+
+    /* media query collapse under 700px */
+    @media (max-width: 700px) {
+      .page-grid {
+        grid-template-areas:
+          "header"
+          "sidebar"
+          "main"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ---------- 5. PRODUCT CARD + BADGE (relative+absolute) ---------- */
+    .product-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .product-card {
+      position: relative;        /* anchor for absolute badge */
+      background: white;
+      border-radius: 2rem;
+      padding: 1.8rem 1.5rem 1.5rem;
+      width: 240px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      text-align: center;
+      transition: 0.1s;
+    }
+
+    .product-card .badge {
+      position: absolute;
+      top: -0.7rem;
+      right: -0.7rem;
+      background: #c2410c;
+      color: white;
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      box-shadow: 0 4px 8px rgba(194, 65, 12, 0.2);
+      border: 2px solid white;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    .product-card .badge span {
+      display: block;
+      margin-top: -2px;
+    }
+
+    .product-card .product-img {
+      background: #eef2f6;
+      height: 120px;
+      border-radius: 1.2rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #2c4a6e;
+      font-size: 0.9rem;
+      border: 1px solid #dce3ec;
+    }
+
+    .product-card h3 {
+      font-weight: 500;
+      margin-bottom: 0.2rem;
+    }
+
+    .product-card .price {
+      font-weight: 600;
+      color: #0f2b45;
+      font-size: 1.2rem;
+    }
+    
+    .mt-1 { margin-top: 0.5rem; }
