@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 14 · Flexbox · Grid · Positioning</title>
+  <link rel="stylesheet" href="day14_style.css">
+</head>
+<body>
+
+  <!-- 1. Navbar Flexbox -->
+  <section class="exercise">
+    <h2>1. Flex navbar <small>logo left · links + button right · vertically centered · space-between</small></h2>
+    <nav class="navbar">
+      <div class="logo">✦ Logo</div>
+      <ul class="nav-links">
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a class="btn-outline" href="#">Sign in</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- 2. Four cards with flex:1 + wrap + gap -->
+  <section class="exercise">
+    <h2>2. Four cards · flex:1 · wrap · gap <small>reflow on narrow screen</small></h2>
+    <div class="card-row">
+      <div class="card"><strong>🌱</strong><br>Seed</div>
+      <div class="card"><strong>🌿</strong><br>Sprout</div>
+      <div class="card"><strong>🌳</strong><br>Sapling</div>
+      <div class="card"><strong>🌲</strong><br>Forest</div>
+    </div>
+  </section>
+
+  <!-- 3. Photo gallery with auto-fit minmax -->
+  <section class="exercise">
+    <h2>3. Photo gallery · auto-fit minmax(200px, 1fr) <small>resize to see columns change</small></h2>
+    <div class="gallery">
+      <div class="gallery-item">📷 Mountain</div>
+      <div class="gallery-item">📷 Lake</div>
+      <div class="gallery-item">📷 Forest</div>
+      <div class="gallery-item">📷 Sunset</div>
+      <div class="gallery-item">📷 City</div>
+      <div class="gallery-item">📷 Ocean</div>
+    </div>
+  </section>
+
+  <!-- 4. Full page grid with areas + media query collapse -->
+  <section class="exercise">
+    <h2>4. Full page grid · grid-template-areas <small>collapses to single column under 700px</small></h2>
+    <div class="page-grid">
+      <div class="header">📌 Header</div>
+      <div class="sidebar">🗂️ Sidebar</div>
+      <div class="main">📄 Main content</div>
+      <div class="footer">📎 Footer</div>
+    </div>
+  </section>
+
+  <!-- 5. Product card with circular ETB Sale badge (relative + absolute) -->
+  <section class="exercise">
+    <h2>5. Product card · “ETB Sale” badge · top-right corner <small>relative + absolute</small></h2>
+    <div class="product-wrapper">
+      <!-- product 1 -->
+      <div class="product-card">
+        <div class="badge">ETB<br><span>Sale</span></div>
+        <div class="product-img">🎒</div>
+        <h3>Weekender</h3>
+        <div class="price">ETB 1,250</div>
+        <div style="font-size:0.85rem; color:#3a5a7a; margin-top:0.3rem;">durable · 40L</div>
+      </div>
+      <!-- product 2 (extra to show badge style) -->
+      <div class="product-card">
+        <div class="badge">ETB<br><span>Sale</span></div>
+        <div class="product-img">🧢</div>
+        <h3>Trail cap</h3>
+        <div class="price">ETB 450</div>
+        <div style="font-size:0.85rem; color:#3a5a7a; margin-top:0.3rem;">organic cotton</div>
+      </div>
+      <div class="product-card">
+        <div class="badge">ETB<br><span>Sale</span></div>
+        <div class="product-img">🥾</div>
+        <h3>Hiker Pro</h3>
+        <div class="price">ETB 2,890</div>
+        <div style="font-size:0.85rem; color:#3a5a7a; margin-top:0.3rem;">waterproof</div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: 2rem; font-size:0.85rem; color:#6a7f9a; text-align:center; border-top:1px solid #e2e8f0; padding-top:1.8rem;">
+    Day 14 · Flexbox · Grid · positioning — all exercises completed.
+  </footer>
+</body>
+</html>
