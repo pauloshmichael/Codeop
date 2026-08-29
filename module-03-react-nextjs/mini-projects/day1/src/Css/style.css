@@ -1,0 +1,32 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #faf5ee;
+  color: #2b2118;
+  margin: 0;
+}
+header {
+  background: #1f6f3f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+.dish {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border-left: 5px solid #e8a317;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.dish h3 { margin: 0 0 0.25rem; }
+.description { margin: 0; color: #6b5d50; font-size: 0.95rem; }
+.price { font-weight: bold; color: #c0392b; white-space: nowrap; }
