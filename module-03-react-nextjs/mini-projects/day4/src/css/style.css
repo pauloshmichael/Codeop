@@ -1,0 +1,74 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #faf5ee;
+  color: #2b2118;
+  margin: 0;
+}
+header {
+  background: #1f6f3f;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  background: #fff;
+  border-left: 5px solid #e8a317;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.dish h3 { margin: 0 0 0.25rem; }
+.description { margin: 0; color: #6b5d50; font-size: 0.95rem; }
+.price { font-weight: bold; color: #c0392b; white-space: nowrap; }
+button { font: inherit; cursor: pointer; }
+.dish-side { display: flex; flex-direction: column; align-items: flex-end; gap: 0.5rem; }
+.dish-side button {
+  background: #1f6f3f; color: #fff; border: 0;
+  border-radius: 6px; padding: 0.35rem 0.9rem;
+}
+.count { margin-left: 0.5rem; color: #1f6f3f; font-size: 0.9rem; }
+.chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+.chip {
+  border: 1px solid #1f6f3f; background: #fff; color: #1f6f3f;
+  border-radius: 999px; padding: 0.3rem 0.9rem;
+}
+.chip.active { background: #1f6f3f; color: #fff; }
+.total { text-align: right; font-size: 1.1rem; }
+.order-form {
+  display: grid; gap: 0.75rem; margin-top: 2rem;
+  background: #fff; padding: 1.25rem; border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+.order-form label { display: grid; gap: 0.25rem; font-weight: 600; }
+.order-form input, .order-form select {
+  font: inherit; padding: 0.5rem; border: 1px solid #cbbfae; border-radius: 6px;
+}
+.order-form button {
+  background: #1f6f3f; color: #fff; border: 0; border-radius: 6px; padding: 0.6rem;
+}
+.error { color: #c0392b; margin: 0; font-size: 0.9rem; font-weight: normal; }
+.order-form input[aria-invalid="true"] { border-color: #c0392b; }
+.order-form button:disabled { background: #b9b2a8; cursor: not-allowed; }
+.status { text-align: center; padding: 2rem 0; color: #6b5d50; }
+.failed { color: #c0392b; font-weight: 600; }
+.spinner {
+  width: 28px; height: 28px; margin: 0 auto 0.5rem;
+  border: 3px solid #e8dfd2; border-top-color: #1f6f3f; border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.search {
+  width: 100%; box-sizing: border-box; font: inherit;
+  padding: 0.6rem 0.8rem; margin-bottom: 1rem;
+  border: 1px solid #cbbfae; border-radius: 6px;
+}
